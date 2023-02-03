@@ -1,5 +1,6 @@
 import { HTMLAttributes } from "react";
 
-export type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
+export type ButtonProps = Omit<HTMLAttributes<HTMLButtonElement>, "onClick"> & {
   theme?: "default" | "outline";
+  onClick?: () => void;
 };
