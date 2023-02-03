@@ -1,8 +1,11 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 import "normalize.css";
 import type { AppProps } from "next/app";
+import { App } from "@/app";
 
-const MyApp = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />;
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <App>
+    <Component {...pageProps} />
+  </App>
+);
 
 export default MyApp;

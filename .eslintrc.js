@@ -39,5 +39,8 @@ module.exports = {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
     ],
+    "import/extensions": 0,
+    "react/jsx-props-no-spreading": 0,
+    "import/no-extraneous-dependencies": 0,
   },
 };
