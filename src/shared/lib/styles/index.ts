@@ -1,5 +1,4 @@
 import { createStitches } from "@stitches/react";
-
 import { setupStyles } from "./global";
 
 export const media = {
@@ -13,6 +12,7 @@ export const { styled, getCssText, keyframes, createTheme, css } = createStitche
   theme: {
     colors: {
       background: "#F2F4F7",
+      headerBackground: "#292929",
       block: "#FFFFFF",
       blockLight: "#FFFFFF",
       white: "#FFFFFF",
@@ -98,6 +98,7 @@ export const { styled, getCssText, keyframes, createTheme, css } = createStitche
 export const darkTheme = createTheme({
   colors: {
     block: "#141E33",
+    headerBackground: "#FFFFFF",
     blockLight: "#202B42",
     background: "#0F121F",
     text: "#FFFFFF",
