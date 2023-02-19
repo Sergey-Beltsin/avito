@@ -1,6 +1,12 @@
-import { HTMLAttributes } from "react";
+import { ReactNode } from "react";
 
-export type ButtonProps = Omit<HTMLAttributes<HTMLButtonElement>, "onClick"> & {
-  theme?: "default" | "outline";
+export interface ButtonProps {
+  children?: ReactNode | string;
+  disabled?: boolean;
+  isLoading?: boolean;
+  type?: "submit" | "button";
+  size?: "large" | "medium" | "small";
+  radius?: "none" | "medium";
+  theme?: "blue" | "green" | "gray" | "violet";
   onClick?: () => void;
-};
+}
