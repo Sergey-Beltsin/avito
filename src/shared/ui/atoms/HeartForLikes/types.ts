@@ -1,7 +1,5 @@
-import { SVGProps } from "react";
-
 export interface HeartForLikesProps {
-  size?: "small" | "medium" | SVGProps<SVGSVGElement>;
+  size?: "small" | "medium";
   onClick?: () => void;
   isClicked?: boolean;
   theme?: "gray" | "blue";

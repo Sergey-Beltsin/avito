@@ -3,6 +3,6 @@ import * as S from "./style";
 
 export const HomePage: FC = () => (
   <S.Root>
-    <div></div>
+    <div>Home</div>
   </S.Root>
 );
