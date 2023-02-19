@@ -6,7 +6,7 @@ export const HeartForLikes: FC<HeartForLikesProps> = ({ theme = "gray", size = "
   return (
     <S.HeartIcons onClick={onClick}>
       {theme === "gray" ? (
-        <S.SvgHeart xmlns="http://www.w3.org/2000/svg" size={size}>
+        <S.SvgHeart xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 24" size={size}>
           <path
             d="M10.918 5.085a5.256 5.256 0 0 1 7.524 0c2.077 2.114 2.077 5.541 0 7.655l-7.405 7.534a.75.75 0 0 1-1.074 0L2.558 12.74c-2.077-2.114-2.077-5.54 0-7.655a5.256 5.256 0 0 1 7.524 0c.15.152.289.312.418.479.13-.167.269-.327.418-.479z"
             fill="#CCC"
@@ -14,7 +14,7 @@ export const HeartForLikes: FC<HeartForLikesProps> = ({ theme = "gray", size = "
         </S.SvgHeart>
       ) : null}
       {theme === "blue" ? (
-        <S.SvgHeart size={size} fill="none" xmlns="http://www.w3.org/2000/svg">
+        <S.SvgHeart size={size} viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           {isClicked === true ? (
             <path
               d="M9 1.866A4.791 4.791 0 005.2 0C2.348 0 0 2.348 0 5.2c0 1.466.606 2.82 1.493 3.707l6.8 6.8a1 1 0 001.414 0l6.8-6.8a.99.99 0 00.046-.049C17.37 7.924 18 6.7 18 5.2 18 2.348 15.652 0 12.8 0 11.253 0 9.878.73 9 1.866z"

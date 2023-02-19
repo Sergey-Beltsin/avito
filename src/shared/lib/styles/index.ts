@@ -17,9 +17,10 @@ export const { styled, getCssText, keyframes, createTheme, css } = createStitche
       blockLight: "#FFFFFF",
       white: "#FFFFFF",
       whiteOpacity: "rgba(255, 255, 255, 0.8)",
-      text: "#141E33",
+      textWhite: "#FFFFFF",
+      text: "#000000",
       textOpacity: "#AAAAAA",
-      textGray: "#6F6F6F",
+      gray: "#6F6F6F",
       textSecondary: "#9CA2AF",
       accent: "#0A84FF",
       accentLight: "rgb(100, 162, 206)",
@@ -30,12 +31,12 @@ export const { styled, getCssText, keyframes, createTheme, css } = createStitche
       imageGradient:
         "linear-gradient(90deg, rgba(0, 120, 209, 0.2) 0%, rgba(169, 101, 245, 0.2) 100%), linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);",
       overlay: "rgba(0, 0, 0, 0.4)",
-      red: "#FF3B30",
+      gray: "rgb(235, 234, 232)",
       green: "#32D74B",
       turquoise: "#6DE5BE",
       border: "#E0E2E6",
       borderSecondary: "#9CA2AF",
-      purple: "#AB58FF",
+      violet: "#AB58FF",
       notify: "rgba(10, 37, 64, 0.8)",
     },
     shadows: {
@@ -105,6 +106,7 @@ export const darkTheme = createTheme({
     textSecondary: "#6D8CB6",
     border: "#26324D",
     borderSecondary: "#6D8CB6",
+    textWhite: "#000000",
   },
 });
 
