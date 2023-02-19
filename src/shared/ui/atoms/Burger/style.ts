@@ -1,7 +1,6 @@
 import { styled } from "@stitches/react";
-import { BurgerProps } from "./types";
 
-export const Burger = styled<BurgerProps>("button", {
+export const Burger = styled("button", {
   display: "block",
   position: "relative",
   backgroundColor: "inherit",
@@ -61,7 +60,7 @@ export const Burger = styled<BurgerProps>("button", {
   },
 });
 
-export const MiddleLine = styled<BurgerProps>("div", {
+export const MiddleLine = styled("div", {
   width: "100%",
   height: "2px",
   backgroundColor: "$headerBackground",

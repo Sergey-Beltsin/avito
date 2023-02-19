@@ -1,7 +1,6 @@
 import { styled } from "@stitches/react";
-import { InputProps } from "./types";
 
-export const InputWrapper = styled<InputProps>("label", {
+export const InputWrapper = styled("label", {
   transition: "$default",
   display: "flex",
   alignItems: "center",
@@ -35,15 +34,17 @@ export const InputWrapper = styled<InputProps>("label", {
       },
     },
     disabled: {
-      cursor: "not-allowed",
-      opacity: ".5",
-      disabled: true,
-      readonly: true,
+      true: {
+        cursor: "not-allowed",
+        opacity: ".5",
+        disabled: true,
+        readonly: true,
+      },
     },
   },
 });
 
-export const Input = styled<InputProps>("input", {
+export const Input = styled("input", {
   width: "100%",
   border: "none",
   background: "inherit",

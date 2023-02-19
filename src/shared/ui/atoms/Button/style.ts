@@ -1,7 +1,6 @@
 import { styled } from "@stitches/react";
-import { ButtonProps } from "./types";
 
-export const Button = styled<ButtonProps>("button", {
+export const Button = styled("button", {
   fontFamily: "$mulish",
   width: "100%",
   border: "none",
@@ -16,10 +15,14 @@ export const Button = styled<ButtonProps>("button", {
 
   variants: {
     disabled: {
-      cursor: "not-allowed",
-      opacity: "0.5",
+      true: {
+        cursor: "not-allowed",
+        opacity: "0.5",
+      },
     },
-    isLoading: {},
+    isLoading: {
+      true: {},
+    },
     size: {
       large: {
         height: "66px",
@@ -31,11 +34,11 @@ export const Button = styled<ButtonProps>("button", {
         height: "30px",
       },
     },
-    form: {
-      oval: {
+    radius: {
+      medium: {
         borderRadius: "6px",
       },
-      rectangle: {
+      none: {
         borderRadius: "0",
       },
     },

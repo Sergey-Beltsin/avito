@@ -1,6 +1,7 @@
 import { Button } from "@/shared/ui/atoms/Button/style";
 import { styled } from "@stitches/react";
 import Link from "next/link";
+import { ButtonProps } from "@storybook/components";
 
 export const Container = styled("div", {
   maxWidth: "1200px",

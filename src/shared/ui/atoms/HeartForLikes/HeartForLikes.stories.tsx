@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { HeartForLikes } from "./index";
 
 const meta: ComponentMeta<typeof HeartForLikes> = {
-  title: "ui/HeartForLikes",
+  title: "atoms/HeartForLikes",
   component: HeartForLikes,
   argTypes: {
     size: {

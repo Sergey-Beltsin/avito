@@ -3,7 +3,7 @@ import { Input } from "@/shared/ui";
 import "@/shared/lib/styles";
 
 const meta: ComponentMeta<typeof Input> = {
-  title: "ui/Input",
+  title: "atoms/Input",
   component: Input,
   argTypes: {
     size: {

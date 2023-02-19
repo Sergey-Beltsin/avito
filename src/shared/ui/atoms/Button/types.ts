@@ -6,7 +6,7 @@ export interface ButtonProps {
   isLoading?: boolean;
   type?: "submit" | "button";
   size?: "large" | "medium" | "small";
-  form?: "oval" | "rectangle";
+  radius?: "none" | "medium";
   theme?: "blue" | "green" | "gray" | "violet";
   onClick?: () => void;
 }

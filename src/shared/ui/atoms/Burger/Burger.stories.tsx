@@ -3,7 +3,7 @@ import { Burger } from "@/shared/ui";
 import "@/shared/lib/styles";
 
 const meta: ComponentMeta<typeof Burger> = {
-  title: "ui/Burger",
+  title: "atoms/Burger",
   component: Burger,
 };
 

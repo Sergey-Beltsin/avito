@@ -3,7 +3,7 @@ import { Button } from "./index";
 import "@/shared/lib/styles";
 
 const meta: ComponentMeta<typeof Button> = {
-  title: "ui/Button",
+  title: "atoms/Button",
   component: Button,
   argTypes: {
     theme: {
@@ -14,9 +14,9 @@ const meta: ComponentMeta<typeof Button> = {
       defaultValue: "large",
       options: ["large", "medium", "small"],
     },
-    form: {
-      defaultValue: "rectangle",
-      options: ["rectangle", "oval"],
+    radius: {
+      defaultValue: "none",
+      options: ["none", "medium"],
     },
   },
 };
@@ -55,13 +55,13 @@ Small.args = {
 
 export const Oval = Template.bind({});
 Oval.args = {
-  form: "oval",
+  radius: "medium",
   children: "Oval button",
 };
 
 export const Rectangle = Template.bind({});
 Rectangle.args = {
-  form: "rectangle",
+  radius: "none",
   children: "Rectangle button",
 };
 

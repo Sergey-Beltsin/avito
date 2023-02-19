@@ -20,7 +20,6 @@ export const { styled, getCssText, keyframes, createTheme, css } = createStitche
       textWhite: "#FFFFFF",
       text: "#000000",
       textOpacity: "#AAAAAA",
-      gray: "#6F6F6F",
       textSecondary: "#9CA2AF",
       accent: "#0A84FF",
       accentLight: "rgb(100, 162, 206)",
