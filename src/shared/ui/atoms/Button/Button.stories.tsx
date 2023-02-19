@@ -53,16 +53,16 @@ Small.args = {
   children: "Small button",
 };
 
-export const Oval = Template.bind({});
-Oval.args = {
+export const MediumRadius = Template.bind({});
+MediumRadius.args = {
   radius: "medium",
-  children: "Oval button",
+  children: "Medium Radius button",
 };
 
-export const Rectangle = Template.bind({});
-Rectangle.args = {
+export const NoneRadius = Template.bind({});
+NoneRadius.args = {
   radius: "none",
-  children: "Rectangle button",
+  children: "No Radius button",
 };
 
 export const Blue = Template.bind({});
