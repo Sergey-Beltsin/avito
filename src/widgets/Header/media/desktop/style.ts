@@ -1,5 +1,6 @@
 import { Button } from "@/shared/ui/atoms/Button/style";
-import { styled } from "@stitches/react";
+import { styled } from "@/shared/lib/styles";
+
 import Link from "next/link";
 
 export const Container = styled("div", {
@@ -28,9 +29,15 @@ export const UserActions = styled("div", {
 export const HeaderItem = styled(Link, {
   color: "$textWhite",
   marginLeft: "22px",
+  fontSize: "14px",
+  lineHeight: "20px",
 
   "&:first-child": {
     marginLeft: "0",
+  },
+
+  "&:hover": {
+    color: "$red",
   },
 });
 
@@ -39,6 +46,10 @@ export const UserActionLink = styled(HeaderItem, {
   marginLeft: "0",
   padding: "0 20px",
   margin: "auto",
+
+  "&:hover": {
+    color: "$textWhite",
+  },
 });
 
 export const WrapperActionButton = styled("div", {
@@ -47,4 +58,10 @@ export const WrapperActionButton = styled("div", {
 
 export const ButtonAction = styled(Button, {
   padding: "0 14px",
+  fontSize: "14px",
+  lineHeight: "20px",
+
+  "&:hover": {
+    opacity: "0.9",
+  },
 });

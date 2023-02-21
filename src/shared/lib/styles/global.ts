@@ -24,6 +24,10 @@ export const setupStyles = globalCss({
     color: "inherit",
     textDecoration: "none",
   },
+  ul: {
+    margin: "0",
+    padding: "0",
+  },
   button: {
     padding: 0,
 
