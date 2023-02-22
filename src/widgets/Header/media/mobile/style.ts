@@ -1,5 +1,4 @@
 import { styled } from "@/shared/lib/styles";
-import Link from "next/link";
 
 export const HeaderWrapper = styled("header", {});
 

@@ -9,7 +9,7 @@ export const Search: FC = () => {
   const { t } = useTranslation("common");
 
   const { register, handleSubmit } = useForm<SearchTypes>();
-  const onSubmit: SubmitHandler<SearchTypes> = (data) => alert(data);
+  const onSubmit: SubmitHandler<SearchTypes> = () => {};
 
   return (
     <S.FormSearch onSubmit={handleSubmit(onSubmit)}>

@@ -3,7 +3,6 @@ import useTranslation from "next-translate/useTranslation";
 import * as S from "./style";
 import { SidebarMobileProps } from "./types";
 import { UserActions, UserHelperActions } from "./data";
-import { UserHelperActionsItem } from "./style";
 
 export const SidebarMobile: FC<SidebarMobileProps> = ({ isOpened, handleClose }) => {
   const { t } = useTranslation("common");
