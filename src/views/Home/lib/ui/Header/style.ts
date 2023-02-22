@@ -18,6 +18,10 @@ export const WrapperButton = styled("div", {
 
 export const ButtonAllCategories = styled(Button, {
   padding: "8px 16px 10px 12px",
+
+  "&:hover": {
+    opacity: "0.9",
+  },
 });
 
 export const LeftContainer = styled("div", {

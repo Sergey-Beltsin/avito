@@ -1,8 +1,16 @@
 import { styled } from "@/shared/lib/styles";
-import { Swiper } from "swiper/react";
 import Link from "next/link";
 
-export const SwiperCategories = styled(Swiper, {});
+export const SwiperContainer = styled("div", {
+  width: "100%",
+
+  "&.swiper-slide": {
+    display: "flex",
+    width: "auto",
+    height: "auto",
+    padding: "10px",
+  },
+});
 export const CategoryItem = styled(Link, {
   fontFamily: "$mulish",
   display: "flex",
@@ -12,12 +20,10 @@ export const CategoryItem = styled(Link, {
   fontSize: "13px",
   lineHeight: "16px",
   fontWeight: "$regular",
-  height: "55px",
 
   "@fromTablet": {
     fontSize: "15px",
     lineHeight: "20px",
-    height: "60px",
   },
 });
 
@@ -27,4 +33,6 @@ export const Title = styled("h3", {
   fontWeight: "inherit",
   lineHeight: "inherit",
   color: "$text",
+  display: "block",
+  marginTop: "10px",
 });

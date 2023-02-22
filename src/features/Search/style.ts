@@ -13,4 +13,8 @@ export const FormSearch = styled("form", {
 export const SearchButton = styled(Button, {
   padding: "0 21px",
   maxWidth: "120px",
+
+  "&:hover": {
+    opacity: "0.9",
+  },
 });

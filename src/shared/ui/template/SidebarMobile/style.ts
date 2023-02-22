@@ -55,7 +55,7 @@ export const UserWrapper = styled("div", {
 });
 
 export const UserActions = styled("ul", {
-  padding: "25px",
+  padding: "25px 25px 0 25px",
 });
 
 export const UserActionsItem = styled(Link, {
@@ -72,7 +72,7 @@ export const UserActionsItem = styled(Link, {
 });
 
 export const UserHelperActions = styled("ul", {
-  padding: "25px",
+  padding: "0px 25px 25px 25px",
 });
 
 export const UserHelperActionsItem = styled(Link, {
@@ -81,7 +81,7 @@ export const UserHelperActionsItem = styled(Link, {
   color: "$text",
   display: "flex",
   alignItems: "center",
-  margin: "20px 0",
+  padding: "20px 0",
   borderTop: "1px solid $gray",
   borderBottom: "1px solid $gray",
 
