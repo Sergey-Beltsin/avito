@@ -89,14 +89,23 @@ export const UserActionsItem = styled(Link, {
   color: "$text",
   display: "flex",
   alignItems: "center",
-  margin: "20px 0",
+  margin: "35px 0",
 
   "&:first-child": {
     marginTop: "0",
   },
 
+  "&:last-child": {
+    marginBottom: "25px",
+  },
+
+  '@fromWideMobile': {
+    margin: "35px 0",
+    fontSize: "$medium",
+  },
+
   '@fromTablet': {
-    margin: "25px 0",
+    margin: "40px 0",
     fontSize: "$medium",
   }
 });
@@ -160,6 +169,10 @@ export const LinkAuth = styled(Link, {
   color: "$textWhite",
   fontFamily: "$mulish",
   fontSize: "$default",
+
+  '@fromWideMobile': {
+    fontSize: "$medium",
+  },
 
   '@fromTablet': {
     fontSize: "$medium",
