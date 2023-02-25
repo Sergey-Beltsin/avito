@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, {FC, useEffect} from "react";
 import useTranslation from "next-translate/useTranslation";
 import * as S from "./style";
 import { SidebarMobileProps } from "./types";
@@ -6,6 +6,16 @@ import { UserActions, UserHelperActions } from "./data";
 
 export const SidebarMobile: FC<SidebarMobileProps> = ({ isOpened, handleClose }) => {
   const { t } = useTranslation("common");
+
+  useEffect(() => {
+    if (isOpened) {
+      document.body.classList.add("overflow-hidden");
+
+      return;
+    }
+
+    document.body.classList.remove("overflow-hidden")
+  }, [isOpened])
 
   return (
     <S.SidebarOverlay isOpened={isOpened} onClick={handleClose}>
