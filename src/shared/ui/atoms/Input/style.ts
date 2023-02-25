@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "@/shared/lib/styles";
 
 export const InputWrapper = styled("label", {
   transition: "$default",
@@ -14,7 +14,7 @@ export const InputWrapper = styled("label", {
         borderRadius: "6px",
       },
       whiteBlue: {
-        backgroundColor: "inherit",
+        backgroundColor: "$block",
         border: "1px solid $accent",
         borderRadius: "3px",
       },

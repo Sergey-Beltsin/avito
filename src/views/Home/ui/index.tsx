@@ -1,8 +1,10 @@
 import { FC } from "react";
+import { Categories, HomeHeader } from "@/views/Home/lib/ui";
 import * as S from "./style";
 
 export const HomePage: FC = () => (
   <S.Root>
-    <div>Home</div>
+    <Categories />
+    <HomeHeader />
   </S.Root>
 );

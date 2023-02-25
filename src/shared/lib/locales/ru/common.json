@@ -1,4 +1,21 @@
 {
-  "increment": "Увеличить",
-  "decrement": "Уменьшить"
+  "AllCategories": "Все категории",
+  "Auto": "Авто",
+  "Building": "Недвижимость",
+  "Electronics": "Электроника",
+  "Services": "Услуги",
+  "Job": "Работа",
+
+  "ForBusiness": "Для бизнеса",
+  "Help": "Помощь",
+  "Catalogs": "Каталоги",
+
+  "LoginAndRegistration": "Вход и регистрация",
+  "LoginOrRegister": "Войти или зарегистрироваться",
+
+  "PlaceAnAd": "Разместить объявление",
+
+  "SearchInAllRegions": "Поиск по всем регионам",
+
+  "Search": "Найти"
 }

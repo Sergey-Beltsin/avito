@@ -1,4 +1,23 @@
 {
-  "increment": "Increment",
-  "decrement": "Decrement"
+  "AllCategories": "All categories",
+  "Auto": "Auto",
+  "Building": "Building",
+  "Electronics": "Electronics",
+  "Services": "Services",
+  "Job": "Job",
+
+  "ForBusiness": "For Business",
+  "Help": "Help",
+  "Catalogs": "Catalogs",
+
+  "LoginAndRegistration": "Login and registration",
+  "LoginOrRegister": "LoginOrRegister",
+
+  "PlaceAnAd": "Place an ad",
+
+  "SearchInAllRegions": "Search in all regions",
+
+  "Search": "Search"
+
+
 }

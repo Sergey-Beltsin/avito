@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "@/shared/lib/styles";
 
 export const Button = styled("button", {
   fontFamily: "$mulish",

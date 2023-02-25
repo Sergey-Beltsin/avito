@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "@/shared/lib/styles";
 
 export const HeaderWrapper = styled("header", {});
 
@@ -21,7 +21,7 @@ export const WrapperLogo = styled("div", {
 });
 
 export const WrapperBurger = styled("div", {
-  padding: "15px",
+  margin: "15px",
 });
 
 export const ButtonWrapper = styled("div", {
