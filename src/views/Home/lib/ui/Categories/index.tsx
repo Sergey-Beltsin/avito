@@ -15,7 +15,14 @@ export const Categories: FC = () => {
     <div>
       {isTablet ? null : (
         <S.SwiperContainer>
-          <Swiper className="mySwiper" slidesPerView={4} effect="slide">
+          <Swiper slidesPerView={2} className="mySwiper" effect="slide" breakpoints={{
+            560: {
+              slidesPerView: 3
+            },
+            768: {
+              slidesPerView: 5
+            }
+          }}>
             {dataCategories.map((item) => (
               <SwiperSlide key={item.id}>
                 <S.CategoryItem href={item.href}>

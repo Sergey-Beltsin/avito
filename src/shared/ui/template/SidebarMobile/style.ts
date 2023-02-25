@@ -31,11 +31,12 @@ export const SidebarInnerWrapper = styled("div", {
 });
 
 export const Sidebar = styled("div", {
-  width: "400px",
+  width: "70%",
   backgroundColor: "$background",
   boxShadow: "$default",
   transform: "translateX(-100%)",
   transition: "$default",
+  height: '100%',
 
   variants: {
     isActive: {
@@ -44,6 +45,14 @@ export const Sidebar = styled("div", {
       },
     },
   },
+
+  '@fromWideMobile': {
+    width: '330px',
+  },
+
+  '@fromTablet': {
+    width: '400px',
+  }
 });
 
 export const UserWrapper = styled("div", {
@@ -51,11 +60,27 @@ export const UserWrapper = styled("div", {
   display: "flex",
   justifyContent: "left",
   flexDirection: "column",
-  padding: "25px",
+  padding: "15px",
+
+  '@fromWideMobile': {
+    padding: "25px",
+  },
+
+  '@fromTablet': {
+    padding: "35px",
+  }
 });
 
 export const UserActions = styled("ul", {
-  padding: "25px 25px 0 25px",
+  padding: "15px 15px 0 15px",
+
+  '@fromWideMobile': {
+    padding: "25px 25px 0 25px"
+  },
+
+  '@fromTablet': {
+    padding: "25px 35px 0 35px"
+  }
 });
 
 export const UserActionsItem = styled(Link, {
@@ -69,10 +94,23 @@ export const UserActionsItem = styled(Link, {
   "&:first-child": {
     marginTop: "0",
   },
+
+  '@fromTablet': {
+    margin: "25px 0",
+    fontSize: "$medium",
+  }
 });
 
 export const UserHelperActions = styled("ul", {
-  padding: "0px 25px 25px 25px",
+  padding: "0px 15px 10px 15px",
+
+  '@fromWideMobile': {
+    padding: "0 25px 25px 25px"
+  },
+
+  '@fromTablet': {
+    padding: "0 35px 35px 35px"
+  }
 });
 
 export const UserHelperActionsItem = styled(Link, {
@@ -89,6 +127,11 @@ export const UserHelperActionsItem = styled(Link, {
     color: "$accent",
     borderBottom: "none",
   },
+
+  '@fromTablet': {
+    padding: "25px 0",
+    fontSize: "$medium",
+  }
 });
 
 export const ImageIcons = styled(Image, {
@@ -107,10 +150,18 @@ export const UserPhotoWrapper = styled("div", {
   backgroundColor: "$white",
   opacity: "0.9",
   marginBottom: "20px",
+
+  '@fromTablet': {
+    marginBottom: "25px",
+  }
 });
 
 export const LinkAuth = styled(Link, {
   color: "$textWhite",
   fontFamily: "$mulish",
   fontSize: "$default",
+
+  '@fromTablet': {
+    fontSize: "$medium",
+  }
 });
